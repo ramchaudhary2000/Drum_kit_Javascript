@@ -60,23 +60,7 @@
     <audio data-key="75" src="Assests/Audio/50_DobraAirTom_811.wav"></audio>
     <audio data-key="76" src="Assests/Audio/Tink_SP_160_01.wav"></audio>
 
-
-
-    <script>
-        window.addEventListener('keydown', function (event) {
-            const audio = document.querySelector(`audio[data-key = "${event.keyCode}"]`);
-            const key = document.querySelector(`key[data-key = "${event.keyCode}"]`);
-            if(!audio)return;
-            audio.currentTime = 0;
-            audio.play();
-            key.classList.add('playing');
-            setTimeout(function(){
-
-            }, 0.07)
-        });
-    </script>
-
-
+<script src="home.js"></script>
 </body>
 
 </html>
